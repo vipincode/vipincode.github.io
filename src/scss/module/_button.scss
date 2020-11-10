@@ -1,0 +1,17 @@
+.btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: $primary__color;
+    font-size: em(20px);
+    font-weight: $font-weight--md;
+    transition: background-color $transition ease-out, color $transition ease-out;
+    &:hover {
+        background-color: $primary__color;
+        color: $secondary__color;
+    }
+
+    @include bg-colors($ui-colors);
+}

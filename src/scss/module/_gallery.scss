@@ -1,0 +1,21 @@
+.gallery {
+    &--item {
+        margin: $gutter;
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+        }
+    }
+
+    @include mq('md') {
+        @include flexy($wrap: wrap);
+        &--item {
+            flex: 1 per-line(2);
+            img {
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+    }
+}

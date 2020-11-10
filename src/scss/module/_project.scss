@@ -1,0 +1,75 @@
+.project {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    @include mq('md') {
+        height: 400px;
+        .webwork--img img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &--item {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+    }
+    @include mq('lg') {
+        height: 500px;
+        .webwork--img img {
+            height: 500px;
+        }
+    }
+    @include mq('xl') {
+        height: 600px;
+        .webwork--img img {
+            height: 600px;
+        }
+    }
+
+    &--bg {
+        background-color: $primary__color;
+        position: relative;
+        article {
+            @include mq('xs') {
+                padding: 50px 20px;
+            }
+            @include mq('sm') {
+                padding: 20px 20px;
+            }
+            @include mq('md') {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+            }
+            h1 {
+                color: $white;
+                font-size: em(32px);
+                font-weight: $font-weight--xl;
+                @include mq('lg') {
+                    font-size: em(62px);
+                    margin-bottom: em(10px, 62px);
+                    letter-spacing: $letter-space;
+                }
+            }
+            p {
+                color: $white;
+                font-size: em(18px);
+                margin-top: 0;
+                @include mq('md') {
+                    font-size: em(18px);
+                    font-weight: $font-weight--md;
+                    padding: 0px 30px;
+                }
+            }
+        }
+    }
+    
+}
+

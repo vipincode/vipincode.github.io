@@ -1,0 +1,51 @@
+// GOOGLE FOONTS
+$font-stack--google     : 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800';
+$font-family--primary   : 'Open Sans', sans-serif;
+$font-weight--sm        : 300;
+$font-weight--md        : 400;
+$font-weight-x-md       : 600;
+$font-weight--lg        : 700;
+$font-weight--xl        : 800;
+
+// COLORS
+
+$primary__color          : #015761;
+$secondary__color        : #f1c40f;
+$grey                    : #F1F0F0;
+$gark-grey               : #1e272e;
+$black                   : #000;
+$accent                  : #555;
+$white                   : #fff;
+
+// MAPS
+$ui-colors         : (
+	default          : #3c40c6,
+	info             : #4bcffa,
+	warning          : $secondary__color,
+	success          : #05c46b,
+	error            : #ff3f34
+);
+
+// UNITS
+
+$base-font               : 16px;
+$base--line              : 24px;
+$letter-space            : 1px;
+$max-width               : 1200px;
+$gutter                  : 30px;
+$transition              : 0.4s;
+$br-radius               : 4px;
+$br-roundy               : 50%;
+$spaceamounts            : (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$sides                   : (top, bottom, left, right);
+
+
+// BREAKPOINTS
+
+$breakpoints   : (
+	'xs'         : 575px,
+	'sm'         : 576px,
+	'md'         : 768px,
+	'lg'         : 1025px,
+	'xl'         : 1600px,
+);

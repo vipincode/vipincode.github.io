@@ -1,0 +1,127 @@
+.logo {
+
+    @include mq('xl') {
+        margin-left: em(80px);
+    }
+
+    a {
+        display: block;
+        color: $secondary__color; 
+       span {
+           display: block;
+           font-size: em(34px);
+           font-weight: $font-weight--xl;
+           letter-spacing: $letter-space;
+           margin-bottom: em(10px, 34px);
+       }
+    }
+
+    ul {
+        @include flexy($wrap: wrap);
+        li {
+            margin-right: em(20px);
+            a {
+                color: $white;
+                transition: color $transition;
+                &:hover {
+                    color: $secondary__color; 
+                }
+            }
+        }
+    }
+}
+
+.hero {
+
+    color: $white;
+    @include mq('md') {
+        @include flexy($wrap: wrap);
+    }
+
+    &__item {
+        padding: em(40px);
+        background-color: $primary__color;
+        @include mq('md') {
+            height: 100vh;
+            flex: 1 per-line(2);
+        } 
+    }
+
+    &__bg {
+        background: linear-gradient(rgba($black, 0.3), rgba($black, 0.3)),
+                    $primary__color url('../img/hero.jpg') no-repeat center / cover;
+        @include mq('xs') {
+            height: em(200px);
+            
+        } 
+    }
+
+    article {
+        margin-top: em(30px);
+
+        @include mq('md') {
+            margin-top: em(50px);
+        }
+        @include mq('lg') {
+            margin-top: em(70px);
+        }
+
+        @include mq('xl') {
+            margin-left: em(100px);
+            margin-top: em(140px);
+        }
+
+        span {
+            color: $secondary__color;
+            @include mq('md') {
+                font-size: em(32px);
+                font-weight: $font-weight-x-md;
+            }
+        }
+
+        h1 {
+            line-height: 1.1;
+            margin-bottom: em(15px, 52px);
+            @include mq('md') {
+                font-size: em(65px);
+                font-weight: $font-weight--xl;
+                margin-bottom: em(15px, 65px);
+                line-height: 1.1;
+            }
+
+            @include mq('lg') {
+                font-size: em(120px);
+                margin-bottom: em(15px,120px);
+            }
+
+            @include mq('xl') {
+                font-size: em(135px);
+                margin-bottom: em(15px,135px);
+            }
+        }
+
+        p {
+            font-size: em(15px);
+            margin: em(25px, 18px) 0 em(20px, 18px) 0;
+            @include mq('md') {
+                font-size: em(16px);
+                font-weight: $font-weight--md;
+                letter-spacing: $letter-space;
+            }
+            @include mq('lg') {
+                font-size: em(18px);
+                letter-spacing: $letter-space * 3;
+            }
+            @include mq('xl') {
+                font-size: em(23px);
+            }
+        }
+
+    }
+}
+
+.singh {
+    @include mq('md') {
+        margin-left: em(13px);
+    }
+}

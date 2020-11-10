@@ -1,0 +1,30 @@
+
+.skill {
+    @include mq('xs') {
+        h3 {
+            margin-top: em(20px, 19px);
+        }
+    }
+    @include mq('md') {
+        @include flexy($wrap: wrap);
+        &--item {
+            flex: 1 per-line(4);
+        }
+    }
+
+    ul li {
+        display: block;
+        padding: 6px 0px 0 18px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: $br-roundy;
+            background-color: $secondary__color;
+            position: absolute;
+            left: 0;
+            top: em(12px);
+        }
+    }
+}

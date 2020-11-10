@@ -1,0 +1,26 @@
+
+#about {
+    background-color: $grey;
+    padding-top: em(80px);
+    padding-bottom: em(80px);
+    article {
+        text-align: center;
+        p {
+            font-size: em(18px);
+            @include mq('sm') {
+                font-weight: $font-weight--md;
+            }
+        }
+        @include mq('md') {
+            width: 85%;
+            margin: auto;
+        }
+        @include mq('lg') {
+            width: 75%;
+        }
+
+        @include mq('xl') {
+            width: 60%;
+        }
+    }
+}

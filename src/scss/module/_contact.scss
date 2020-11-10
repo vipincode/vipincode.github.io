@@ -1,0 +1,122 @@
+
+.conbg-grey {
+    background-color: $grey;
+    position: relative;
+    height: 430px;
+
+    @include mq('md') {
+        height: 500px;
+    }
+
+    @include mq('md') {
+        height: 550px;
+    }
+
+    @include mq('xl') {
+        height: 600px;
+    }
+}
+
+.conbg-green {
+    @include mq('md') {
+        height: 500px;
+    }
+    @include mq('md') {
+        height: 550px;
+    }
+    @include mq('xl') {
+        height: 600px;
+    }
+
+    background-color: $primary__color;
+    padding: 20px 40px 20px;
+
+    h2 {
+        color: $secondary__color;
+        font-size: em(42px);
+        margin-bottom: em(8px, 42px);
+        font-weight: $font-weight--lg;
+    } 
+
+    address {
+        h3, ul li, ul li a {
+            color: $white;
+        }
+
+        h3 {
+            margin-top: em(19px);
+            margin-bottom: 12px;
+        }
+
+        ul li {
+            display: block;
+            margin-bottom: em(6px);
+        }
+    }
+}
+
+.contact {
+    @include mq('md') {
+        @include flexy($wrap: wrap);
+
+        &--item {
+            flex: 1 per-line(2);
+        }
+    }
+
+    &--content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h3 {
+            text-align: center;
+            color: $primary__color;
+            margin-top: em(15px, 20px);
+            @include mq('md') {
+                font-size: em(23px);
+                font-weight: $font-weight--lg;
+            }
+        }
+        p {
+            text-align: center;
+            color: $primary__color;
+            @include mq('md') {
+                font-size: em(18px);
+                font-weight: $font-weight--md;
+            }
+        }
+        ul {
+            text-align: center;
+            li {
+                display: inline-block;
+            }
+
+            a {
+                height: 32px;
+                display: block;
+            }
+        }
+
+        .fb,.git,.in,.tw {
+            display: block;
+            width: 32px;
+        }
+
+        .fb {
+            background: url('../img/social.png') 0 0;
+        }
+
+        .git {
+            background: url('../img/social.png') -41px 0;
+        }
+
+        .in {
+            background: url('../img/social.png') -84px 0;
+        }
+
+        .tw {
+            background: url('../img/social.png') -123px 0;
+        }
+    }
+}

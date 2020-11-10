@@ -1,0 +1,172 @@
+#resume {
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    background-color: $primary__color;
+    @include mq('xs') {
+        overflow-y: scroll;
+    }
+    @include mq('sm') {
+        overflow-y: scroll;
+    }
+    @include mq('md') {
+        overflow-y: hidden;
+    }
+}
+
+.resume {
+    padding-bottom: 50px;
+    @include mq('sm') {
+        @include flexy($wrap: wrap);
+        border-bottom: 1px solid $white;
+        &__item {
+            flex: 1 per-line(2);
+            @include flexy();
+            a {
+                display: block;
+                margin-top: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    h3 {
+        color: $secondary__color;
+        @include mq('md') {
+            font-size: em(42px);
+            margin-bottom: em(5px, 42px);
+        }
+    }
+
+    a {
+        color: $secondary__color;
+       @include mq('xs') {
+        padding-left: 29px;
+        margin-top: 20px;
+        display: block;
+       }
+    }
+
+    p {
+        color: $white;
+        margin: 0;
+        font-size: em(18px);
+    }
+}
+
+.work {
+    @include mq('sm') {
+        @include flexy($wrap: wrap);
+        border-bottom: 1px solid $white;
+        &__item {
+            flex: 1 per-line(2);
+        }
+    }
+    h3 {
+        color: $white;
+        @include mq('md') {
+            font-size: em(27px);
+        }
+    }
+    ul {
+        li {
+            color: $white;
+            padding: 5px 0px;
+            display: block;
+            a {
+                color: $white;
+                transition: $transition;
+                &:hover {
+                    color: $secondary__color;
+                }
+            }
+        }
+    }
+
+    &__skills {
+        @include mq('md'){
+            border-right: 1px solid $white;
+        }
+    }
+    &__project {
+        @include mq('md') {
+            padding-left: 30px;
+        }
+    }
+}
+
+.prof {
+    padding-top: 20px;
+    h3 {
+        color: $secondary__color;
+    }
+
+    p {
+        color: $white;
+        font-size: em(18px);
+    }
+}
+
+/* width */
+#resume::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+#resume::-webkit-scrollbar-track {
+    background: $grey;
+}
+
+/* Handle */
+#resume::-webkit-scrollbar-thumb {
+    background: $secondary__color;
+}
+
+/* Handle on hover */
+#resume::-webkit-scrollbar-thumb:hover {
+    background: $secondary__color;
+}
+
+.rbase {
+    position: relative;
+}
+
+#close {
+    position: absolute;
+    right: 28px;
+    top: 15px;
+    span {
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+    }
+    img {
+        width: 32px;
+        @include mq('xs') {
+            width: 24px;
+        }
+    }
+}
+
+.rsm--download {
+    position: relative;
+}
+
+.rsm--download::before {
+    content: url(../img/docs.png);
+    position: absolute;
+    top: -4px;
+    left: -27px;
+    @include mq('xs') {
+        left: 0;
+    }
+}
+
+.js__hideClass {
+    display: none;
+}
+.js__addclss {
+    display: block;
+}
