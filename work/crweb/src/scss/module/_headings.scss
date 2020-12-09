@@ -1,0 +1,19 @@
+.heading {
+	@extend %center-align;
+
+	h1 {
+		@extend %hdln-prim;
+		margin-bottom: em(34px, 42px);
+	}
+
+	p {
+		@extend %accent;
+		@extend .centered;
+		@include mq('medium') {
+			width: 90%;
+		}
+		@include mq('large') {
+			width: 70%;
+		}
+	}
+}

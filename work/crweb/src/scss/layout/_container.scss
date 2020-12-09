@@ -1,0 +1,10 @@
+.container {
+	@extend .centered;
+	width: 95%;
+	@include mq('medium') {
+		max-width: 970px;
+	}
+	@include mq('large') {
+		max-width: 1170px;
+	}
+}

@@ -1,0 +1,98 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family--primary;
+  font-size: $base__font-size;
+  line-height: $base__line / $base__font-size;
+  color: palette(grey, dark);
+  letter-spacing: $letter-space;
+}
+
+// Text
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: palette(grey, x-dark);
+}
+
+// Lists 
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Images
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Form elements
+
+input,
+textarea {
+  display: block;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+// Buttons
+
+button {
+  outline: 0;
+}
+
+// Margins
+
+@include list-loop('.m-t-', 'margin-top');
+@include list-loop('.m-r-', 'margin-right');
+@include list-loop('.m-b-', 'margin-bottom');
+@include list-loop('.m-l-', 'margin-left');
+@include list-loop('.m-x-', 'margin');
+
+// Paddings
+
+@include list-loop('.p-t-', 'padding-top');
+@include list-loop('.p-r-', 'padding-right');
+@include list-loop('.p-b-', 'padding-bottom');
+@include list-loop('.p-l-', 'padding-left');
+@include list-loop('.p-x-', 'padding')
+
+// Footer
+
+footer {
+  background-color: palette(grey, x-light);
+  padding: em(40px) 0;
+}
+
+.footer {
+  @include flexy($just:space-between, $align: center);
+  @include e(item) {
+    p {
+      @extend %para-light;
+      a {
+        color: $color-secondary;
+      }
+    }
+    li {
+      @extend %para-light;
+      @include mq(medium) {
+        display: inline-block;
+        margin-left: em(15px);
+      }
+    }
+  }
+}

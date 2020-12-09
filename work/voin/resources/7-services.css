@@ -1,0 +1,44 @@
+#services {
+    margin-top: 90px;
+}
+
+.service {
+    padding: 20px 12px 15px;
+    border-radius: 4px;
+}
+
+.service img {
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.color-1 {
+    background: rgba(246, 185, 59, 0.24);
+}
+
+.color-2 {
+    background: rgba(120,224, 143, 0.24);
+}
+
+.color-3 {
+    background: rgba(235,47, 6, 0.24);
+}
+
+.get-ready {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

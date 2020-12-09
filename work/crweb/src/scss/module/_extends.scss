@@ -1,0 +1,90 @@
+// ==========================================================================
+// Placeholders
+// ==========================================================================
+
+// Nav
+
+%nav-item-disp {
+	@include mq('medium') {
+		display: inline-block;
+		margin: 0px em(12px);
+	}
+}
+
+%nav-item-link {
+	font-size: em(18px);
+	font-weight: $font-weight-medium;
+	display: block;
+	padding: em(8px, 18px);
+	border-bottom: 1px solid transparent;
+}
+
+%nav-item-on {
+	color: palette(black);
+	border-color: $color-primary;
+}
+
+// Headline
+
+%hdln-prim {
+	color: palette(grey, x-dark);
+	font-weight: $font-weight-large;
+	font-size: em(42px);
+	line-height: (46px/42px);
+}
+
+%hdln-sec {
+	color: palette(grey, dark);
+	font-weight: $font-weight-x-large;
+	font-size: em(28px);
+}
+
+// Paragraphs
+
+%accent {
+	color: palette(grey, dark);
+	font-size: em(21px);
+	font-weight: $font-weight-large;
+	letter-spacing: $letter-space;
+}
+
+%para-med {
+	color: palette(grey, dark);
+	font-size: em(18px);
+	font-weight: $font-weight-medium;
+	letter-spacing: $letter-space;
+}
+
+%para-light {
+	color: palette(grey, dark);
+	font-size: em(15px);
+	font-weight: $font-weight-medium;
+	letter-spacing: $letter-space;
+}
+
+%para-thin {
+	color: palette(grey, dark);
+	font-size: em(13px);
+	font-weight: $font-weight-medium;
+	letter-spacing: $letter-space;
+}
+
+// Buttons
+
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius : $br-default;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: $font-weight-xx-large;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}

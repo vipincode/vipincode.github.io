@@ -1,0 +1,37 @@
+.btn {
+	@include bg-colors($ui-colors);
+	@include e(readmore) {
+		color: palette(grey, x-dark);
+		font-size: em(19px);
+		display: inline-block;
+		padding: em(6px, 19px) 0;
+		font-weight: $font-weight-large;
+		border-bottom: 1px solid $color-primary;
+		transition: $trns-duration;
+		&:hover {
+			opacity: 0.75;
+		}
+	}
+	@extend %btn;
+	@include mq('medium') {
+		display: inline-block;
+		margin-top: em(40px, 14px);
+	}
+	&--overlay {
+		display: inline-block;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: $font-weight-xl-large;
+		font-size: em(15px);
+		padding: em(8px, 15px) em(15px, 15px);
+		border: 2px solid $white;
+		border-radius: $br-default;
+		margin-top: em(15px, 15px);
+		transition: $trns-duration;
+		&:hover {
+			background-color: $white;
+			color: palette(grey, x-dark);
+		}
+	}
+}
+

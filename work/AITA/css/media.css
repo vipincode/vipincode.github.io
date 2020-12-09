@@ -1,0 +1,825 @@
+/* /END NAV MEDIA */
+
+@media(max-width: 1024px) {
+    .site-wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .logo-text + .logo-text {
+        margin-top: -16px;
+    }
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .navbar-nav li a {
+        font-size: 16px;
+    }
+
+    .btn-contact {
+        font-size: 12px;
+        padding: 6px 11px;
+    }
+
+    .site-ico {
+        padding: 5px 9px 5px;
+        font-size: 10px;
+    }
+
+    .slide_foot_right strong {
+        font-size: 23px;
+    }
+
+     #hero {
+        margin-top: 59px;
+    } 
+
+    .hero-content-form {
+        transform: translate(-50%, -146%);
+    }
+
+    .slider_item_one h3, 
+    .slider_item_two h3, 
+    .slider_item_three h3 {
+        font-size: 26px;
+    }
+
+    /* INDIA DAY TRIP CODE --------- */
+
+    .group-hero-content h1 {
+        font-size: 30px;
+    }
+
+    .group-hero-content p {
+        font-size: 21px;
+    }
+
+    #group-hero {
+        margin-top: 91px;
+    }
+
+    #why-group-tour {
+        padding: 40px 10px;
+    }
+
+    .group-slider-item article {
+        width: 100%;
+    }
+
+    .group-slider-item article h2 {
+        font-size: 22px;
+    }
+
+    .group-slider-item article p {
+        font-size: 15px;
+    }
+
+    .grp-arrow-left,
+    .grp-arrow-right {
+        top: 98px;
+    }
+
+    .slick-dots li {
+        top: -21px
+    }
+}
+
+@media(max-width: 991px) {
+    /* NAV Currency  Code */
+    
+    /* .cur-dropbtn {
+        margin-bottom: 10px;
+    }
+
+    .cur-dropdown-content {
+        min-width: 318px;
+        padding: 16px;
+    }
+
+    .country-curr a {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .country-curr a i {
+        font-size: 10px;
+    }
+
+    .country-curr-symb {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    .corr-title {
+        margin-left: -12px;
+    } */
+
+    .hero-content-form {
+        transform: translate(-50%, -112%);
+    }
+
+    /* Hamburger Menu Work ----- */
+
+    .ham-mob-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .ham-mob-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      width: 180px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+      padding: 12px 16px;
+      z-index: 1;
+      right: 0px;
+    }
+
+    .ham-mob-dropdown:hover .ham-mob-dropdown-content {
+      display: block;
+    }
+
+    .ham-mob-dropdown-content a {
+        display: block;
+        padding: 7px 0px;
+    }
+
+    .ham-mob-dropdown-content a:hover {
+        text-decoration: none;
+        color: #d24d53;
+    }
+    
+    .ham-mobile-menu span {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .navbar-brand {
+        margin-left: 45px;
+        font-size: 16px;
+    }
+    
+    .site-main-nav {
+        position: relative;
+    }
+    
+    .ham-logos {
+        position: absolute;
+        top: 8px;
+        right: 131px;
+    }
+    
+    .ham-logos strong {
+        display: block;
+        font-size: 16px;
+        color: #d24d53;
+        text-transform: uppercase;
+    }
+
+    .logo-text + .logo-text {
+        margin-top: -11px;
+    }
+
+    .ham-overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.46);
+        z-index: 1099;
+    }
+    
+    .ham-text + .ham-text {
+        margin-top: -11px;
+    }
+    
+    .hamburger-menu .btn:focus, 
+    .hamburger-menu .btn:active:focus, 
+    .hamburger-menu .btn.active:focus{
+        outline:none;
+        box-shadow:none;
+    }
+
+    .hamburger-menu .menu {
+        -webkit-transition: 0.1s -webkit-transform linear;
+        transition: 0.1s -webkit-transform linear;
+        transition: 0.1s transform linear;
+        transition: 0.1s transform linear, 0.1s -webkit-transform linear;
+        position: fixed;
+        left: 15px;
+        top: 35px;
+        background: 0;
+        float: left;
+        width: 42px;
+        z-index: 1;
+        outline: 0;
+        padding: 0;
+        border: 0;
+        z-index: 99999;
+    }
+
+    .bar,
+    .bar::before,
+    .bar::after {
+        -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+        transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+        transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+        transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
+        position: absolute;
+        background: #3d4041;
+        margin: auto;
+        width: 100%;
+        height: 2px;
+        content: "";
+        top: 50%;
+        left: 0;
+        outline: none;
+    }
+
+    .bar {
+        margin-top: -0.2rem;
+        width: 27px;
+    }
+
+    .bar::before {
+        top: 16px;
+    }
+
+    .bar::after {
+        top: 8px;
+    }
+
+    .bar::before,
+    .bar::after {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    .active .bar {
+        background: 0;
+    }
+
+    .active .bar::before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .active .bar::after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .active .bar::before,
+    .active .bar::after {
+        top: 0;
+    }
+
+    .active .bar,
+    .active .bar::before,
+    .active .bar::after {
+        -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+        transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+        transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+        transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+    }
+
+    .hamburger-menu nav {
+        width: 250px;
+        height: 100%;
+        background: #F7F5F6;
+        position: fixed;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateX(-250px);
+        transform: translateX(-250px);
+        -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+        transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+        transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+        transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91), -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+        padding-top: 5rem;
+        z-index: 9999;
+    }
+
+    .menu-open .hamburger-menu nav {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .hamburger-menu nav ul {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    .hamburger-menu nav ul li {
+        display: block;
+        padding: 10px 15px;
+        font-size: 15px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .hamburger-menu nav ul li a:hover {
+        color: #3d4041;
+        text-decoration: none;
+    }
+
+    .ham-nav-link {
+        border: 1px solid #eee;
+    }
+} 
+
+@media(max-width: 768px) {
+    .btn-interest {
+        padding: 21px 28px;
+    }
+
+    .slide_foot_left {
+        margin-bottom: 20px;
+    }
+
+    .hero-content-logo {
+        transform: translate(31px, 58px);
+    }
+
+    .top_attraction_overlay article {
+        padding: 43px 0px 9px;
+    }
+}
+
+@media(max-width: 414px) {
+    .hero-srv-container {
+        width: 95%;
+    }
+
+    .hero-srv-content article {
+        margin-top: 0px;
+    }
+
+    .interest-text {
+        margin-bottom: 10px;
+    }
+
+    .hero-content-form {
+        margin-top: 87px;
+    }
+
+    .hero-content-form h1 {
+        font-size: 25px;
+    }
+
+    .site-heading h2 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .site-heading p {
+        font-size: 16px;
+    }
+
+    .headset {
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .headset i {
+        margin-left: 0px;
+    }
+
+    .helpcenter-content h3 {
+        margin-bottom: 18px;
+        margin-top: 18px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .helpcenter-content p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    /* HEADER SEARCHBAR --- */
+
+    .input-group .form-control:hover, 
+    .input-group .form-control:focus {
+        width: 250px;
+    }
+
+    .form-control.search-control {
+        font-size: 14px;
+    }
+    
+    /* INDEX PAGE CODE--- */
+    .hero-content-form {
+        transform: translate(-50%, -131%);
+    }
+    
+    .hero-srv-content {
+        margin-bottom: 15px;
+    }
+
+    .heros-form input {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .hero-p-text {
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    #hero-banner .slick-prev {
+        left: 2px;
+        z-index: 9;
+    }
+
+    #hero-banner  .slick-next {
+        right: 15px;
+        z-index: 9;
+    }
+
+    .helpcenter-text-content {
+        text-align: center;
+    }
+
+    .headset img {
+        width: 77px;
+        margin-left: 0px;
+    }
+    
+    /* OVERLAY EFFECT ------- */
+
+    .hero-input-overlay {
+        width: 300px;
+        margin-top: 33px;
+        font-size: 20px;
+    }
+
+    .hero-input-overlay::placeholder { 
+      font-size: 20px;
+    }
+
+    .hero-input-overlay:-ms-input-placeholder { 
+      font-size: 20px;
+    }
+
+    .hero-input-overlay::-ms-input-placeholder { 
+      font-size: 20px;
+    }
+    .overlay-content p {
+        padding: 20px;
+        margin: 0px;
+    }
+
+    /* SLIDER ARROWS ---- */
+
+    .slide_foot_right {
+        text-align: left;
+    }
+
+    .btn_slider {
+        margin-top: 0px;
+    }
+
+    .slider-arrow-left, 
+    .slider-arrow-right {
+        padding: 13px 4px;
+    }
+
+    .slider_item_one h3, 
+    .slider_item_two h3, 
+    .slider_item_three h3 {
+        font-size: 19px;
+    }
+
+    /* SLIDER CARD ------------ */
+
+    .group_item_one, .group_item_two, .group_item_three {
+        padding: 15px;
+    }
+
+    .slide_foot_left .btn-view-tours {
+        padding: 7px 24px;
+        font-size: 14px;
+    }
+
+    .group-card-flag-text small {
+        font-size: 11px;
+    }
+
+    .slide_foot_right strong {
+        font-size: 18px;
+    }
+
+     /* FOOTER CODE ---------------- */
+
+    .footr-acptcard span {
+        margin-right: 13px;
+    }
+
+    .footr-copyright p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .foot-main-content ul li a {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        margin-top: 20px;
+    }
+
+    .footer-logo-content {
+        border-right: none;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footr-acptcard {
+        margin-bottom: 15px;
+    }
+
+    .footr-acptcard small {
+        width: 54%;
+    }
+
+    .footer-news-letter form input[type="text"] {
+        width: 76%;
+    }
+}
+
+@media(max-width: 360px) {
+    .group-slider-item article h2 {
+        font-size: 20px;
+    }
+
+    .group-slider-item article p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .group-card-flag {
+        padding: 11px 3px;
+    }
+
+    .group-card-flag-content p {
+        font-size: 9px;
+    }
+
+    .group-card-flag-text small {
+        font-size: 11px;
+    }
+
+    /* SLIDER CARD--------  */
+
+    .group-text_content h3 {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .group-text_content p {
+        font-size: 13px;
+    }
+
+    /* Footer Code ------- */
+
+    .footer-news-letter form input[type="text"] {
+        width: 73%;
+    }
+
+    .footr-acptcard small {
+        width: 60%;
+    }
+
+    .footr-copyright p {
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 320px) {
+
+    /* INDEX PAGE CODE ------ */
+    #hero {
+        height: 400px;
+    }
+    .topattraction-cta .btn-view-tours {
+        padding: 10px 16px;
+    }
+
+    /* SLIDER CARD ------ */
+
+    .group-card-flag-content h5 {
+        font-size: 14px;
+    }
+    
+    .group-card-flag-text small {
+        font-size: 10px;
+    }
+
+
+    .group-text_content h3 {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .group-text_content p {
+        font-size: 12px;
+    }
+
+    /* FOOTER WORK ---------- */
+
+    .footer-news-letter form input[type="text"] {
+        width: 69%;
+    }
+
+    .footr-acptcard small {
+        width: 60%;
+        font-size: 10px;
+    }
+}
+
+@media(min-width: 576px) {
+    .foot-link + .foot-link {
+        margin-left: 15px;
+    }
+
+    .foot-link {
+        display: inline-block;
+    }
+}
+
+@media(min-width: 992px) {
+    .hamburger-menu .menu,
+    .hamburger-menu nav,
+    .ham-mobile-menu {
+        display: none;
+    }
+}
+
+@media(min-width: 1025px) {
+    .site-wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .navbar-nav {
+        padding-left: 19px;
+        position: relative;
+    }
+
+    #people-counter {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .site-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hero-srv-container {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .attr-image {
+        height: 290px;
+        object-fit: cover;
+    }
+    
+    .hero-content-form h1 {
+        font-size: 85px;
+        letter-spacing: -3px;
+    }
+
+    .srv-arrow-left {
+        top: 15px;
+    }
+
+    .srv-arrow-right {
+        top: 15px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .hero-srv-container {
+        width: 85%;
+    }
+    .srv-arrow-left {
+        top: 26px;
+    }
+
+    .srv-arrow-right {
+        top: 26px;
+    }
+
+    /* FOOTER WORK ---- */
+    .footer-currency select {
+        width: 97%;
+    }
+}
+
+@media(min-width: 1500px) {
+
+    /* FOOTER WORK ---- */
+    .footer-currency select {
+        width: 95%;
+    }
+}
+
+@media(min-width: 1600px) {
+    .hero-srv-container {
+        width: 80%;
+    }
+    .site-wrapper {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #people-counter {
+        width: 90%;
+    }
+
+    .srv-arrow-left {
+        top: 50px;
+    }
+
+    .srv-arrow-right {
+        top: 50px;
+    }
+
+    /* FOOTER WORK ---- */
+    .footer-currency select {
+        width: 85%;
+    }
+}
+
+
+/* SINGLE EVENT PAGE PRINT CODE */
+
+@media print {
+    body {
+        background: transparent;
+        font-size: 18px;
+    }
+
+   /*  .col-md-6{
+        width: 50%;
+    } */
+
+    #site_nav,
+    #fixed-social,
+    #similar-trips,
+    #footer,
+    .btn-print-page,
+    .footer-fix-nav,
+    .srv-arrow-left,
+    .srv-arrow-right,
+    .t-participants,
+    .no-people,
+    .check-avail-btn {
+        display: none;
+    }
+
+    .dtour-services {
+        border-bottom: none;
+    }
+
+    .site-heading h2 {
+        margin-bottom: 25px;
+    }
+
+    .dtour-content li {
+        font-size: 15px;
+    }
+    
+    .trip-description h4 {
+        padding-left: 5px;
+    }
+
+    .trip-overview article h4,
+    .price-inclusion article h4 {
+        page-break-before: always;
+    }
+
+    .dtour-checkout {
+        margin-top: 290px;
+    }
+
+    @page {
+        size: A4;
+       /*  margin: 0; */
+    }
+
+   @page:right{
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+}

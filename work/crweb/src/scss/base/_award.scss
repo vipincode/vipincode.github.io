@@ -1,0 +1,23 @@
+#award {
+	@extend %clearfix;
+	background-color: palette(grey, xx-light);
+	padding: em(50px) 0;
+}
+
+.award {
+	@include e(item) {
+		@extend %center-align;
+		h1 {
+			font-size: em(20px);
+			margin-top: em(30px, 20px);
+		}
+
+		img {
+			opacity: 0.75;
+			transition: opacity $trns-duration ease-out;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

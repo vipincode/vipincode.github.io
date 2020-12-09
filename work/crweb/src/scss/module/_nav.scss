@@ -1,0 +1,48 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav-container {
+	width: 95%;
+	@extend .centered;
+}
+
+.navbar {
+	@include mq('medium') {
+		@include flexy($just: space-between, $align: center);
+	}
+
+	margin-top: em(20px);
+	margin-bottom: em(20px);
+
+	&-logo {
+		h2 {
+			font-size: em(18px);
+			text-transform: uppercase;
+			color: $color-primary;
+			font-weight: $font-weight-xxl-large;
+		}
+	}
+}
+
+.nav {
+	@include e(item) {
+		@extend %nav-item-disp;
+
+		a {
+			@extend %nav-item-link;
+			&:hover {
+				@extend %nav-item-on;
+			}
+		}
+
+		@include m(current) {
+			@extend %nav-item-disp;
+			a {
+				@extend %nav-item-link;
+				@extend %nav-item-on;
+			}
+		}
+
+	}
+}

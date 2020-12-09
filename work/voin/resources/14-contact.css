@@ -1,0 +1,56 @@
+#contact {
+    margin-top: 60px;
+    padding: 40px 0;
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #fff;
+    color: #555;
+    padding: 15px 15px;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px 4px rgba(0,0,0,0.06) inset;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.addr {
+    color: #eb2f06;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.phone p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+#counter {
+    margin-top: 90px;
+    background-color: #eb2f06;
+    padding: 12px;
+}
+
+.count {
+    border: 2px dashed #fff;
+    padding: 12px 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.count-icon {
+    font-size: 59px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 767) {
+    .col {
+        float: none;
+    }
+}

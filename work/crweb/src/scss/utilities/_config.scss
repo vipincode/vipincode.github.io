@@ -1,0 +1,78 @@
+// Font stack
+
+$font-url--google        : 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200';
+$font-family--primary    : 'Raleway', sans-serif;
+
+// Font weight
+
+$font-weight-thin        : 100;
+$font-weight-light       : 200;
+$font-weight-medium      : 300;
+$font-weight-large       : 400;
+$font-weight-x-large     : 500;
+$font-weight-xx-large    : 600;
+$font-weight-xl-large    : 700; 
+$font-weight-xxl-large   : 800;
+
+// Color usage
+
+$color-primary           : #2ed573;
+$color-primary--dark     : darken($color-primary,8%);
+$color-secondary         : #3742fa;
+$color-accent            : #a4b0be;
+$white                   : #fff;
+$black                   : #000;
+$grey                    : #747d8c;
+
+// Color maps
+
+$ui-colors: (
+	default   : #32ccaa,
+	success   : #1acb33,
+	error     : #ba5432,
+	info      : #dac222,
+);
+
+$color-palette: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+		light    : lighten($grey, 22%),
+		base     : $grey,
+		dark     : darken($grey, 15%),
+		x-dark   : darken($grey, 26%),
+	),
+	black: (
+		light   : lighten($black, 10%),
+		base    : $black,
+		dark    : darken($black, 8%),
+		x-dark  : darken($black, 10%),
+	)
+);
+
+// Text Uniits
+
+$base__font-size  : 16px;
+$base__line       : 24px;
+$letter-space     : 1px;
+
+// Margin Padding units
+
+$max: 100;
+$offset: 5;
+$unit: 'px';
+
+// Transition
+
+$trns-duration    : 0.4s;
+
+// Border radius
+
+$br-default       : 0.4em;
+$br-radius        : 50%;
+
+// Breakpoints
+
+$brkpoint-sm      : 1px;
+$brkpoint-md      : 768px;
+$brkpoint-lg      : 1100px;

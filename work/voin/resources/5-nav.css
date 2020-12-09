@@ -1,0 +1,86 @@
+.nav {
+    background: #fff;
+}
+
+.main-nav li a {
+    font-weight: 400;
+    display: block;
+    padding: 8px 0;
+}
+
+@media(max-width: 767px) {
+    
+    h4 {
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    
+    .main-nav li a {
+        display: block;
+        font-size: 18px;
+    }
+    
+    .main-nav li {
+        padding: 5px 0;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .open {
+        display: block;
+    }
+    
+    .nav {
+        position: relative;
+        margin-bottom: 5px;
+    }
+    
+    .nav-button {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 18px;
+    }
+    
+    .bar-1,
+    .bar-2,
+    .bar-3 {
+        width: 35px;
+        height: 5px;
+        background-color: #555;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar-1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar-2 {
+        opacity: 0;
+    }
+    
+    .change .bar-3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+@media(min-width: 768px) {
+    .logo {
+        float: left;
+        padding-top: 10px;
+    }
+    
+    .main-nav {
+        float: right;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+        padding: 10px 0;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,65 @@
+#testimonials {
+    margin-top: 90px;
+    padding: 20px 0;
+}
+
+.testimonial {
+    background: #f5f6fa;
+    padding: 20px 0 30px 10px;
+    box-shadow: 0 0 2px 3px rgba(0,0,0,0.15) inset;
+}
+
+.tes-text small {
+    display: block;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.tes-text {
+    position: relative;
+}
+
+.quote {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+@media(min-width: 768px) {
+    .tes-img {
+        margin-right: 10px;
+    }
+    
+    .tes-img,
+    .tes-text {
+        float: left;
+    }
+    
+    .tes-img {
+        width: 20%;
+    }
+    
+    .tes-text {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

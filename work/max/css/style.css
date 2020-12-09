@@ -1,0 +1,2528 @@
+/* =============   BASE RULE ====================== */
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	line-height: 1.6;
+	color: #232f3e;
+}
+
+h1 {
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+
+h2,h3,h4,h5,h6 {
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+
+p {
+	margin-bottom: 0px;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li a {
+	display: block;
+	padding: 2px 0px;
+}
+
+a:link,
+a:visited,
+a:active {
+	text-decoration: none;
+    color: #232f3e;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* =============   SITE HEADING ================== */
+
+.prim-heading {
+	font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.prim-heading::after {
+	content: "";
+	display: block;
+	width: 170px;
+	margin: 10px auto 10px;
+	height: 5px;
+	background-color: #e2e2e2;
+
+}
+
+.sec-heading {
+	font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.ter-heading {
+	font-size: 18px;
+    font-weight: 600;
+}
+
+.title {
+	font-size: 23px;
+}
+
+.hero_baneer {
+	text-align: center;
+}
+
+.hero_baneer h1 {
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero_baneer p {
+    font-size: 26px;
+    margin: 0 auto;
+}
+
+/* =============   NAVBAR RULE =================== */
+
+.navbar-brand {
+	padding: 6px 0px;
+	border-right: 1px solid #364558;
+}
+
+.nav-wrapper {
+	background-color: #232F3E;
+	padding: 0px 25px;
+} 
+
+.site-logo {
+    width: 160px;
+    margin-right: 23px;;
+}
+
+ .navbar-expand-lg .navbar-nav .nav-link {
+     padding-right: 17px;
+     font-size: 18px;
+ }
+
+.navbar-nav li a,
+.navbar-text a {
+	color: #c3c3c3;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.navbar-toggler-icon i {
+	color: #fff;
+}
+
+/* =============   SECTION HERO =================== */
+
+#hero {
+	background: url('../img/hero.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+/* =============   SECTION BEST OF INDIA =========== */
+
+.heading-articles {
+	text-align: center;
+}
+
+.ind-tour-packages article {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    border-bottom: 2px solid transparent;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.06);
+    transition: box-shadow 0.4s cubic-bezier(.07,.86,.89,.47), border-bottom 0.4s ease-in-out;
+}
+
+.ind-tour-packages article:hover {
+	border-bottom: 2px solid #188888;
+	box-shadow: 0px 0px 40px 10px rgba(28, 158, 156, 0.07);
+}
+
+.ind-tour-packages article a {
+	margin-top: auto;
+}
+
+.ind-tour-packages article p {
+	margin-bottom: 30px;
+}
+
+.heading-articles .read-more {
+	color: #188888;
+	font-size: 14px;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-top: 20px;
+	border-bottom: 1px solid #188888;
+}
+
+.ind-tour-packages {
+	margin-top: 65px;
+}
+
+
+/* =============   SECTION CONTACT OUR TEAM ========== */
+
+#contact-ourteam {
+	padding: 42px;
+	text-align: center;
+	background-color: #e2e2e2;
+}
+
+.team-specialist {
+	color: #188888;
+	font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 9px;
+}
+
+.team-contacts {
+	color: #188888;
+	margin: 0px;
+	font-size: 34px;
+	font-weight: 700;
+}
+
+.contact-ourteam h1 span {
+	font-weight: 300;
+}
+
+
+/* ============= SECTION POPULAR TRAVEL =============== */
+
+.popular-travel-content {
+	margin-top: 30px;
+}
+
+.pop-country-img {
+	margin-bottom: 30px;
+}
+
+.popular-travel-text p {
+	font-size: 19px;
+}
+
+.popular-travel-text a {
+	display: block;
+	margin-top: 41px;
+}
+
+ .hover-content  {
+ 	background: #202020;
+ }
+
+ .hover-content:hover img {
+ 	opacity: 0.65;
+ }
+
+.hover-content {
+	position: relative;
+}
+
+.hover-content span {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hover-content span h4 {
+	color: #fff;
+	font-size: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.pop-country-img figure {
+	overflow: hidden;
+}
+
+.pop-country-img figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.pop-country-img figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* ============= TOP RATED PACKAGE =============== */
+
+#top-rated-package {
+	background: #F6F6F6;
+	padding: 35px 0px;
+}
+
+.packges-card {
+	background: #fff;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	border-bottom: 2px solid transparent;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.06);
+	transition: box-shadow 0.4s cubic-bezier(.07,.86,.89,.47), border-bottom 0.4s ease-in-out;
+}
+
+.packges-card:hover {
+	border-bottom: 2px solid #188888;
+	box-shadow: 0px 0px 40px 10px rgba(28, 158, 156, 0.09);
+}
+
+.pkg-card-img {
+	overflow: hidden;
+}
+
+.pkg-card-img img {
+	width: 100%;
+  transition: transform .5s ease-in-out;
+}
+
+.pkg-card-img:hover img {
+  transform: scale(1.2);
+}
+
+.pkg-card-img {
+	position: relative;
+}
+
+.pkg-flag-green,
+.pkg-flag-red,
+.pkg-flag-blue,
+.pkg-flag-purple,
+.pkg-rating {
+	position: absolute;
+}
+
+.pkg-flag-green {
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	padding: 13px;
+}
+
+.pkg-flag-red,
+.pkg-flag-blue,
+.pkg-flag-purple {
+	color: #fff;
+	padding: 8px 20px;
+	top: 25px;
+}
+
+.pkg-flag-green  {
+	background-color: #188888;
+}
+
+.pkg-flag-blue {
+	background-color: #232f3e;
+}
+
+.pkg-flag-red {
+	background-color: #ff6550;
+}
+
+.pkg-flag-purple {
+	background-color: purple;
+}
+
+.pkg-rating {
+	bottom: 5px;
+    left: 25px;
+    font-size: 20px;
+    color: #ffb31a;
+}
+
+.pkg-rating span {
+	margin-left: -2px;
+}
+
+.pkg-card-content {
+	padding: 25px;
+}
+
+.pkg-card-text h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.pkg-card-text p {
+	margin-bottom: 25px;
+}
+
+.pkg-card-foot span {
+	display: block;
+	font-weight: 700;
+	color: #888888;
+	padding: 8px 10px;
+}
+
+.pkg-card-foot span i {
+	font-size: 18px;
+	color: #188888;
+	margin-right: 6px;
+}
+
+.pkg-card-foot span:last-child {
+	color: #188888;
+}
+
+.pkg-card-foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.load-more {
+	text-align: center;
+}
+
+/* ============= TOUR BY INTEREST =============== */
+
+.tour-interset-content {
+	margin-top: 30px;
+}
+
+.tourins-grid {
+	position: relative;
+	clear: both;
+	list-style: none;
+	text-align: center;
+}
+
+.tourins-grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+	margin: 0;
+}
+
+.tourins-grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.tourins-grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tourins-grid figure figcaption::before,
+.tourins-grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.tourins-grid figure figcaption,
+.tourins-grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.tourins-grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.tourins-grid figure h3,
+.tourins-grid figure h4,
+.tourins-grid figure p {
+	margin-bottom: 0;
+}
+
+.tourins-grid figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.tourins-grid figure h4 {
+	margin-top: 52px;
+	font-weight: 300;
+}
+
+.tourins-grid figure h3 span {
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.tourins-grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-ming {
+	background: #030c17;
+}
+
+figure.effect-ming img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-ming figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-ming p {
+	padding: 1em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-ming:hover h2 {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-ming:hover img {
+	opacity: 0.4;
+}
+
+/* =========== SECTION GROUP TOUR  ============ */
+
+#group-tour {
+	background-color: #F6F6F6;
+	padding: 35px 0px 70px;
+}
+
+.group-tour-content {
+	margin-top: 30px;
+}
+
+.group-tour-card {
+	position: relative;
+	overflow: hidden;
+}
+
+.tour-card-inner {
+	position: absolute;
+	left: 40px;
+	bottom: 40px;
+	color: #fff;
+}
+
+.tour-card-img {
+	background-color: #202020;
+}    
+
+.tour-card-img img {
+	transition: transform .5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.tour-card-img:hover img {
+	opacity: 0.75;
+	transform: scale(1.3);
+}
+
+.tour-card-inner h3 {
+	font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.tour-card-inner h4 {
+	font-size: 25px;
+	font-weight: 300;
+}
+
+.tour-card-inner p {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.tour-card-inner .btn-explore-now {
+	display: inline-block;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 35px;
+    background-color: #3f3f41;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+/* ============= SECTION ABOUT US =============== */
+
+#about-us {
+	padding: 0px 0px 50px;
+}
+
+.about-left-content article h3 {
+	font-size: 32px;
+    font-weight: 700;
+}
+
+.about-right-content {
+    padding: 9px 30px;
+}
+
+.about-right-content article h4 {
+	font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.about-right-content h3 {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+/* ============ SECTION BLOG POST =============== */
+
+#blog-post {
+	background-color: #F6F6F6;
+	padding: 50px 0px;
+}
+
+#blog-post article h3 {
+	font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-left: 3px solid #188888;
+    padding: 3px 12px;
+    margin-bottom: 60px;
+}
+
+.latest-post {
+	background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.04);
+}
+
+.latest-post article {
+	padding-left: 15px;
+}
+
+.latest-post article h6 {
+	font-size: 17px;
+    font-weight: 600;
+}
+
+.latest-post article a.post-read {
+    color: #188888;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.top-review {
+	margin-bottom: 30px;
+}
+
+.read-more-post {
+	margin-top: 20px;
+}
+
+.read-more-post article h2 {
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.read-more-post article p {
+	font-size: 14px;
+}
+
+.read-more-post article a,
+.read-review-post a {
+	display: inline-block;
+    padding: 5px 15px;
+    border-radius: 35px;
+    background-color: #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.rw-article h6 {
+	font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #3f3f41;
+}
+
+.rw-article h5 {
+	font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.rw-article-rating {
+	color: #ffb31a;
+	margin-bottom: 3px;
+}
+
+.rw-article-rating span {
+	margin-left: -2px;
+}
+
+/* ============= SECTION TOP REASON ============ */
+
+#top-reason {
+	padding: 50px 0px 50px;
+}
+
+.top-reason-item {
+	text-align: center;
+}
+
+.top-reason-item img {
+	display: block;
+	width: 35px;
+	margin: 0 auto 20px;
+}
+
+.top-reason-item {
+	background: #fff;
+	padding: 25px;
+	border-radius: 4px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.06);
+}
+
+.top-reason-item article h3 {
+	color: #188888;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* ============= SECTION FOOTER  =============== */
+
+#footer {
+	background-color: #232F3E;
+	color: #c3c3c3;
+	padding-top: 15px;
+}
+
+.footer-bottom {
+	background-color: #2C3848;
+	padding: 20px 0px 20px;
+}
+
+.footer-nav ul li a {
+	color: #aaa;
+    font-size: 12px;
+    font-weight: 300;
+   
+}
+
+.footer-nav ul li {
+	 border-right: 1px solid #5f5f5f;
+    padding: 0px 15px 0px;
+}
+
+.footer-nav ul li:last-child {
+	border: none;
+}
+
+.footer-nav ul li a:hover {
+	color: #fff;
+}
+
+.copyrights p {
+	font-size: 12px;
+	font-weight: 300;
+	color: #aaa;
+	text-align: right;
+}
+
+.footer-logo img {
+	width: 270px;
+}
+
+.footer-addres li {
+	margin-bottom: 0px;
+}
+
+.footer-contact li {
+	margin-bottom: 5px;
+}
+
+.footer-contact {
+	margin-top: 20px;
+}
+
+.foot-compay h2 {
+	font-size: 24px;
+    font-weight: 700;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.company-link li a {
+	color: #c3c3c3;
+	font-weight: 300;
+}
+
+.facebook {
+	margin-top: 35px;
+}
+
+.company-link li a span {
+	margin-right: 10px;
+}
+
+.we-accept {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-top: 1px dotted #e2e2e2;
+	padding: 30px 0px;
+}
+
+.we-accept h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.we-accept ul li {
+	margin-bottom: 5px;
+}
+
+.we-accept ul li:before {
+    font-family: FontAwesome;
+    padding-right:10px;
+    content: "\f00c"; 
+}
+
+
+/* ============ SECTION DESTINATIONS  ============ */
+
+#dest-hero {
+	background: url('../img/andhra-pradesh.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+.dest-country,
+.top-dest-india {
+	margin-top: 50px;
+}
+
+.destination-gallery {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.destination-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.destination-text h4 {
+	font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#top-holidy {
+	padding: 50px 0px;
+}
+
+.destination-gallery {
+	background-color: #202020;
+	overflow: hidden;
+}
+
+.destination-gallery img {
+	transition: transform .5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.destination-gallery:hover img {
+	opacity: 0.75;
+	transform: scale(1.3);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.16);
+}
+
+/* =============  SECTION INDIA ================= */
+
+#india-hero {
+	background: url('../img/buddhist-and-hindu-temple.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+.welcome-article {
+	margin-top: 50px;
+}
+
+.wl-article-text h4 {
+	color: #188888;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.wl-article-text p {
+	font-size: 18px;
+}
+
+.travel-theme {
+	margin-top: 50px;
+}
+
+.trvl-slider-item {
+	position: relative;
+}
+
+.slider-item-text {
+	position: absolute;
+	width: 100%;
+	bottom: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.slider-item-text article h4 {
+	margin: 0;
+	font-size: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.travel-zone,
+.top-states,
+.ind-grp-tours,
+.cust-ind-content,
+.trvl-indinfo-content {
+	margin-top: 50px;
+}
+
+.zone-slider-item,
+.state-slider-item,
+.grp-slider-item {
+	position: relative;
+}
+
+.trvl-indinfo-text p {
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.trvl-indinfo-img,
+.trvl-indinfo-text {
+	margin-bottom: 30px;
+}
+
+.trvl-indinfo-text article h3 {
+	font-size: 23px;
+	font-weight: 600;
+}
+
+.trvl_mob_article {
+	margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding: 30px 0px 0px;
+}
+
+.tourist_attr-text article h3 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.tourist_attr-text p {
+	font-size: 18px;
+}
+
+.tourist_attr-img,
+.tourist_attr-text {
+	margin-bottom: 30px;
+}
+
+.tourist_attr-text a {
+	display: inline-block;
+	padding: 10px 35px;
+	background: #e2e2e2;
+	color: #3f3f41;
+	margin-top: 35px;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 35px;
+}
+
+.ind-read-content,
+.tourist_attr-content,
+.getting-there {
+	margin-top: 50px;
+}
+
+.ind-read-content {
+	margin-bottom: 50px;
+}
+
+/* =============  SECTION NORTH INDIA =========== */
+
+#north-india-hero {
+	background: url('../img/north-india-tours.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+.travel-guide article p {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.trvl-state-link {
+	margin-bottom: 20px;
+}
+
+.travel-guide article p a {
+	font-weight: 600;
+}
+
+.travel-guide article p a:hover {
+	text-decoration: underline;
+}
+
+.trvl-guide-text article h4,
+.temprature h4 {
+	font-size: 21px;
+    font-weight: 600;
+}
+
+.trvl-state-link a {
+	display: inline-block;
+    border-radius: 34px;
+    margin: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.temprature article h6 {
+	font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.temprature article p {
+	font-size: 14px;
+}
+
+.insight-tour article h4 {
+	color: #188888;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.pop-tourist-content {
+	padding: 50px 0px 100px;
+}
+
+.insight-tour article p {
+	font-size: 18px;
+}
+
+/* --------CARDS ---------- */
+
+.north-in-card {
+	position: relative;
+	color: #fff;
+}
+
+.north-in-text {
+	position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.north-in-text h4 {
+	margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.trvl-guide-map {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.06);
+}
+
+.trvl-guide-text {
+	padding: 25px;
+}
+
+.guide-map-img img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.trvl-guide-content,
+.insight-tour,
+.state-in-content,
+.pop-tourist-content,
+.pop-tour-pkg-content,
+.north-map,
+.popular-hill-content,
+.wildlife-content,
+.historical-content,
+.north-blog-content {
+	margin-top: 50px;
+}
+
+.wild-content {
+	position: relative;
+}
+
+.wild-article {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+
+.wild-article h4 {
+	color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#north-ind-blog {
+    background-color: #F6F6F6;
+    padding: 50px 0px;
+}
+
+.btn-blog-readmore {
+	display: inline-block;
+    padding: 5px 15px;
+    border-radius: 35px;
+    background-color: #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.north-blog-item {
+	background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.04);
+}
+
+.north-blog-item article h6 {
+	font-size: 17px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.north-blog-item article small {
+	font-weight: 600;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* ============= SECTION KERALA ================= */
+
+#kerala-hero {
+	background: url('../img/kerala-tour.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+.kerala-tour article p {
+	margin-bottom: 30px;
+}
+
+.pop-slider-item p {
+	text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* ============= SECTION KOCHI  =============== */
+
+#kochi-hero {
+	background: url('../img/kochi.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+/* ========== SECTION TRAVEL IDEAS  ============= */
+
+.trvl-ideas-content {
+	margin-top: 50px;
+}
+
+/* ========== SECTION TRECKING TOURS ============= */
+
+#trekking-hero {
+	background: url('../img/trekking-tours.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+.trekking-tour {
+	margin-top: 50px;
+}
+
+.trekking-tour article p {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.trekking-items {
+	background: #f8fafb;
+	padding: 30px;
+	border-radius: 4px;
+	margin-top: 30px;
+}
+
+.trekk-rating {
+	font-size: 20px;
+    color: #ffb31a;
+}
+
+.trekk-rating span {
+	margin-left: -2px;
+}
+
+.trekking-items article {
+	margin-top: 15px;
+}
+
+.trek-customer-text h5 {
+	font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.trek-customer img {
+	width: 70px;
+}
+
+.about-kl-ytra article p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+a.btn-readmore {
+    color: #188888;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.why-kl-trvl-item {
+    text-align: center;
+}
+
+.why-kl-trvl-item img {
+    margin-bottom: 15px;
+}
+
+.why-kl-trvl-item article p {
+    font-size: 15px;
+}
+
+.why-kl-trvl-item {
+    margin-bottom: 30px;
+}
+
+/* ========== LUXLRY TRAIN JURNY ================ */
+#luxtrain-hero {
+	background: url('../img/train-journey.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+/* ========== REVIEWS  ================ */
+#review-nav {
+    background-color: #232F3E;
+    padding: 6px 0px;
+}
+
+#rw-hero {
+	background: url('../img/reviews_main_page.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+.rw-nav-wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+.rw-nav-content a {
+    color: #fff;
+}
+
+.reviews-logo .rw-links {
+    border-left: 1px solid #9baabb;
+    padding: 0px 20px;
+}
+
+.btn-write-reviews {
+    background: #188888;
+    padding: 10px 16px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 35px;
+}
+
+.rw-nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rw-content-rating {
+    background: #188888;
+    color: #fff;
+    padding: 30px;
+}
+
+.rw-content-article{
+    background: #f8f6f4;
+    padding: 20px;
+}
+
+.rw-usr-rating {
+    margin-bottom: 10px;
+}
+
+.user_name {
+    padding-left: 15px;
+}
+
+.user_name h6 {
+    margin-bottom: 0px;
+}
+
+.user_name span {
+    font-size: 13px;
+}
+
+.rw-content-text p {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.rw-content-text {
+    border-right: 1px dashed #9baabb;
+    padding: 0px 10px 0px 0px;
+}
+
+.rw-content-text a {
+    font-weight: 500;
+    margin-top: 3px;
+    display: block;
+    font-size: 15px;
+}
+
+.rw-content-overall {
+    padding-left: 5px;
+}
+
+.rw-usr-rating span {
+    font-size: 18px;
+    color: #ffb31a;
+}
+
+.rw-usr-rating strong {
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+.rw-content-rating h1 {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.rw-content-rating h1 small {
+    font-size: 24px;
+    margin-left: -18px;
+}
+
+.rw-content-rating h6 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+.rw-content {
+    margin-bottom: 30px;
+}
+
+.rw-heading {
+    text-align: center;
+}
+
+.rw-heading h1 {
+    font-size: 62px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.question-ans-article {
+    margin-bottom: 30px;
+}
+
+.question-ans-article h5 {
+    color: #188888;
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+
+.question-ans-article h5::before {
+    content: "\f059"; 
+    font-family: FontAwesome;
+    left:-5px;
+    position:absolute;
+}
+
+.rw-read-more {
+    text-align: center;
+    padding: 30px;
+}
+
+.rw-read-more .btn-rw-read {
+    background: #188888;
+    color: #fff;
+    padding: 13px 40px;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.rw-footer {
+    padding: 20px 0px;
+}
+
+.rw-footer ul li {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.rw-footer p {
+    font-size: 15px;
+}
+
+/* ========== SECTION BLOG ============= */
+
+#blog-hero {
+	background: url('../img/image_big_5aa6665f5f081.jpg') no-repeat center / cover;
+	padding: 250px 0px 100px;
+	color: #fff;
+}
+
+.blog-left-banner h1 {
+    font-weight: 700;
+}
+
+.blog-right-banner ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 12px;
+}
+.timeline__content {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+}
+
+.timeline__item--right .timeline__content:before {
+    border-right: 12px solid #f1f1f1;
+}
+
+.timeline__content:before {
+    border-left: 12px solid #f1f1f1;
+}
+
+.timeline:not(.timeline--horizontal):before {
+    background-color: #188888;
+}
+
+.timeline__item:after {
+    border: 4px solid #188888;
+}
+
+.timeline__content h5 {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.timeline__content p {
+    font-size: 14px;
+}
+.comments {
+    margin-bottom: 12px;
+}
+
+.comments span {
+    font-size: 13px;
+    margin-right: 12px;
+}
+
+.comments span i {
+    color: #188888;
+}
+
+.timeline__content .btn-blog-read {
+    display: inline-block;
+    padding: 6px 20px;
+    background-color: #188888;
+    color: #fff;
+    border-radius: 34px;
+}
+
+.blog-foot ul li {
+    display: inline-block;
+    padding: 0px 12px;
+}
+
+.blog-loadmore {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.blog-loadmore .btn-lad-more {
+    border: 2px solid #188888;
+    color: #188888;
+    border-radius: 34px;
+    display: inline-block;
+    padding: 12px 39px;
+    font-weight: 600;
+    transition: background 0.4s ease-out, color 0.4s ease-out;
+}
+
+.blog-loadmore .btn-lad-more:hover {
+    background: #188888;
+    color: #fff;
+}
+
+.sb-banner-article h2 {
+    font-size: 29px;
+    margin-top: 20px;
+}
+
+.sb-comments {
+    margin-bottom: 30px;
+}
+
+.sb-comments span {
+    margin-right: 18px;
+}
+
+.sb-comments span i {
+    color: #188888;
+}
+
+.sb-banner-article p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.sb-article {
+    margin-top: 30px;
+}
+
+.sb-article h4 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.sb-article p {
+    font-size: 15px;
+}
+
+.sb-article img {
+    margin: 15px 0px;
+}
+
+.sb-single-line {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.sb-post-comments h3 {
+    font-size: 17px;
+    border-bottom: 2px solid #188888;
+    padding: 10px 0px;
+    color: #188888;
+}
+
+.sb-rc-articles a {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.sb-rc-articles a:hover {
+    color: #188888;
+}
+
+.sb-rc-articles small {
+    font-size: 11px;
+}
+
+.sb-right-content {
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.sb-rc-post-items {
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #eee;
+}
+.sb-rc-post-items:last-child {
+    border-bottom: none;
+}
+
+.sb-rt-heading {
+    font-size: 14px;
+}
+
+.sb-category,
+.sb-tags {
+    margin-top: 30px;
+}
+
+.sb-category ul li {
+    font-size: 15px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.sb-category ul li a:hover {
+      color:#188888; 
+}
+
+.sb-category ul li:before {
+    position: absolute;
+    content: '\f0da';
+    font-family: FontAwesome;
+    top: 2px;
+    left: 0;
+    color:#188888; 
+}
+
+.sb-tags ul li {
+    display: inline-block;
+}
+
+.sb-tags ul li a {
+    font-size: 12px;
+    display: inline-block;
+    padding: 6px 10px;
+    background: #f6f7f8;
+    border-radius: 34px;
+    transition: box-shadow 0.4s;
+    margin: 4px;
+}
+
+.sb-tags ul li a:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+}
+
+.sb-socials {
+    padding: 20px 0px;
+}
+
+.sb-socials a img {
+    width: 32px;
+    margin-right: 6px;
+}
+
+.single-comm-box textarea {
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 5px 15px;
+}
+.single-comm-box textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.single-comm-box input[type="submit"] {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #188888;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 34px;
+    margin-top: 10px;
+}
+
+/* ========== SECTION TOUR PACKAGES ============= */
+
+.tour-pkg-contact {
+	padding: 30px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.06);
+}
+
+.tour-pkg-contact ul li img {
+	width: 35px;
+	margin-right: 12px;
+}
+
+.tour-pkg-contact ul li {
+    display: block;
+    padding: 13px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tour-pkg-contact h5 {
+	color: #188888;
+	font-weight: 600;
+}
+
+.btn-seeall-tour {
+	display: block;
+    padding: 15px 35px;
+    background: #e2e2e2;
+    color: #3f3f41;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tours-pkg-article p {
+	margin-bottom: 30px;
+}
+
+/* =============  GROUP TOURS SECTIONS ============ */
+
+#grp-tours-hero {
+	background: url('../img/group-tours.jpg') no-repeat center / cover;
+    padding: 217px 0px;
+    color: #fff;
+}
+
+/* ============= SINGLE EVENT PAGE- ============ */
+
+.single-evt-item img {
+	width: 100%;
+}
+
+.single-event-highlight {
+	background-color: #f8f6f4;
+}
+
+.single-evt-review,
+.single-evt-price,
+.single-evt-start {
+	border-right: 1px solid #ccc;
+}
+
+.single-evt-review,
+.single-evt-price,
+.single-evt-vacation,
+.single-evt-activity,
+.single-evt-start,
+.single-evt-event {
+	border-bottom: 1px solid #ccc;
+}
+
+.single-evt-review,
+.single-evt-price,
+.single-evt-vacation,
+.single-evt-activity,
+.single-evt-start,
+.single-evt-event {
+	padding: 25px;
+	margin-top: 5px;
+	height: 120px;
+	width: 100%;
+}
+
+.single-event-highlight h3 {
+	padding-left: 25px;
+	padding-top: 25px;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+a.btn-single-evt {
+	display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: #188888;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 82px;
+}
+
+.single-evt-price h4 {
+	font-size: 31px;
+    color: #188888;
+    margin-top: 4px;
+}
+
+.single-evt-activity img {
+	width: 62%;
+    margin-top: 14px;
+}
+
+.evts-rating {
+	margin-top: 5px;
+}
+
+.evts-rating span {
+	font-size: 20px;
+	margin-left: -2px;
+	color: #ffb31a;
+}
+
+.single-event-highlight p {
+	color: #989595;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.single-evt-start h6,
+.single-evt-event h6 {
+	font-size: 21px;
+    margin-top: 12px;
+}
+
+.btn-getstarted {
+	display: inline-block;
+    padding: 5px 15px;
+    border-radius: 35px;
+    background-color: #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+
+}
+
+.need-expert {
+	margin-top: 30px;
+	padding: 25px;
+	border: 1px solid #eee;
+	border-radius: 4px;
+}
+
+.need-expert h4 {
+	font-size: 23px;
+    font-weight: 500;
+}
+
+.single-evt-text {
+	margin-top: 30px;
+}
+
+.single-evt-text article h3 {
+	font-weight: 600;
+    font-size: 30px;
+    color: #188888;
+    margin-bottom: 0px;
+}
+
+.single-evt-text article p {
+	margin-bottom: 30px;
+}
+
+.evt-heading-title {
+	color: #868686;
+	font-weight: 500;
+}
+
+.itinery-content {
+	position: relative;
+}
+
+.itinery-content article {
+	padding-left: 30px;
+    border-left: 1px dashed #d4d4d4;
+    margin-left: -6px;
+    padding-top: 20px;
+}
+
+.itinery-content article h4 {
+	font-size: 21px;
+    font-weight: 600;
+}
+
+.itinery-content article h4::before {
+	position: absolute;
+	left: -16px;
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 4px solid #188888;
+}
+
+.inclusion-item h3 {
+	font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.inclusion-item article h4 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	padding-left: 25px;
+	position: relative;
+}
+
+.inclusion-item article h4::before {
+	position: absolute;
+	left: 0px;
+	top: 1px;
+	content: '';
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+    background-color: #fff;
+	border: 3px solid #FF7F50;
+}
+
+.inclusion-item article h4::after {
+	position: absolute;
+    left: 7px;
+    top: 8px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    padding-left: 2px;
+    border-radius: 50%;
+    background-color: #FF7F50;
+   
+}
+
+.inclusion-item article p {
+	margin-bottom: 25px;
+	padding-left: 25px;
+}
+
+.tour-rating span {
+	margin-left: -2px;
+}
+
+.tour-rating strong {
+	margin-left: 20px;
+    font-size: 21px;
+}
+
+.tour-rating span i {
+    font-size: 20px;
+    color: #ffb31a;
+}
+
+.wrt-review {
+	text-align: right;
+}
+
+/* ============= india group pkg- ============ */
+
+.current-content-item {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.07);
+}
+
+.curr-item-text,
+.curr-item-price {
+    padding: 15px;
+}
+
+.curr-item-price {
+    background: #f8f6f4;
+}
+
+.curr-item-price h5 {
+        font-size: 18px;
+    font-weight: 600;
+}
+
+.curr-item-price h3 {
+    font-weight: 700;
+    color: #188888;
+    margin-top: 15px;
+}
+
+.curr-item-price small {
+    color: initial;
+    font-size: 16px;
+}
+
+.curr-item-price span {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.curr-item-price ul li {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.curr-item-price .btn-crruent-read,
+.curr-item-price .btn-crruent-book {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.curr-item-price  .btn-crruent-read {
+     background: #3f3f41;
+}
+.curr-item-price  .btn-crruent-book {
+     background: #188888;
+}
+
+.curr-item-text p {
+    margin-top: 20px;
+}
+
+.activity_level{
+    margin-left: 20px;
+}
+
+.curr-item-text span b {
+    font-size: 15px;
+}
+
+/* =============  KAILASH YATRA ================= */ 
+
+#kailsh-hero {
+	background: url('../img/kailash-yatra-2019-trip.jpg') no-repeat center / cover;
+	padding: 217px 0px;
+	color: #fff;
+}
+
+.kl-place-interest {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.kl-places li a,
+.kl-resources li a {
+    color: #989898;
+}
+
+.kl-places li {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.kl-places li:before {
+    content: "\f101"; 
+    font-family: FontAwesome;
+    left:-5px;
+    position:absolute;
+    top:2px;
+}
+
+.kl-resources li {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.kl-resources li i {
+    font-size: 12px;
+    padding-right: 7px;
+}
+
+.kl-place-interest .btn-kl-start {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 35px;
+    background-color: #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+
+/* =============  ALL BUTTONS =================== */
+
+a.prim-green-links {
+	display: inline-block;
+    padding: 15px 35px;
+    background: #e2e2e2;
+    color: #3f3f41;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+
+a.prim-btn-links {
+	display: block;
+    color: #188888;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+a.btn-tour-pkg {
+	display: inline-block;
+    padding: 12px 30px;
+    background: #e2e2e2;
+    color: #3f3f41;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+
+/* =============   MARGIN TOP =================== */
+
+.section {
+	margin-top: 50px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+/* ========= SLIDER CODE ====================== */
+
+.slick-prev:before, 
+.slick-next:before {
+    font-size: 36px;
+    color: #188888;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+/* ========= BREADCRUMBS ====================== */
+
+.breadcrumb {
+	background: transparent;
+}
+
+.breadcrumb li,
+.breadcrumb a {
+	font-size: 14px;
+}
+
+/* =============   CLEARFIX =================== */
+
+.clearfix:before,
+.clearfix:after { 
+    display: table; 
+    content: ''; 
+}
+
+.clearfix:after { 
+    clear: both; 
+}
+
+/* ============= MEGA MENU CONTENT ============ */
+
+.navbar-country-heading h3 {
+	font-size: 16px;
+    font-weight: 700;
+    color: #c3c3c3;
+}
+
+.multy-menu:after,
+.contact-dr-ico:after {
+    content: "\f107";  
+    font-family: FontAwesome;
+    padding-left: 6px;
+}
+
+.sub-menu {
+	z-index: 99;
+}
+
+.navbar-mega-link {
+	padding: 30px;
+}
+
+/* ======= ACCORDIAN BASE RULE ========*/
+
+.single-evt-tabs {
+	margin-top: 65px;
+}
+
+.accordion-tabs {
+    color: #232f3e;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.tabs-tab-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs-tab-list li {
+    margin: 0;
+}
+
+.tabs-trigger {
+    border-bottom: none;
+    color: #232f3e;
+    display: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+.tabs-trigger:hover {
+    border-bottom: none;
+    color: #000;
+}
+
+.tabs-trigger.is-selected,
+.tabs-trigger.is-selected:hover,
+.tabs-trigger.is-selected:focus {
+    color: #fff;
+    background: #188888;
+}
+
+.tabs-trigger:active {
+    outline: none;
+}
+
+.tabs-panel {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs-panel:not(:first-of-type) {
+    border-top: 2px solid #eee;
+}
+
+.tabs-panel:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.tabs-panel:not(:last-child) {
+    border-bottom: none;
+}
+
+.tabs-panel .content {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.tabs-panel.is-hidden .content {
+    display: none;
+}
+
+.tabs-panel:active,
+.tabs-panel:focus {
+    outline: none;
+}
+
+.is-initialized.tabs-allowed .tabs-panel {
+    display: inherit;
+}
+
+.accordeon-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-weight: 700;
+}
+
+.accordeon-trigger-icon {
+    pointer-events: none;
+}
+
+@media (min-width: 40em) {
+    .tabs-allowed .accordeon-trigger {
+        display: none;
+    }
+
+    .tabs-allowed .tabs-trigger {
+        display: block;
+    }
+
+    .tabs-allowed .tabs-panel {
+        display: none;
+    }
+
+    .tabs-allowed .tabs-panel.is-hidden {
+        display: none;
+    }
+
+    .tabs-allowed .tabs-panel {
+         border-top: 2px solid #188888;
+    }
+
+    .tabs-allowed .tabs-tab-list {
+        margin-bottom: -2px;
+    }
+}
+
+.accordeon-trigger-icon {
+    display: inline-block;
+    float: right;
+    width: 22px;
+    height: 22px;
+}
+
+.accordeon-trigger-icon svg {
+    margin: 0;
+}
+
+[aria-expanded="true"] .vert {
+    display: none;
+}
+
+.label--open,
+.label--close {
+    display: block;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.label--close {
+    display: none;
+}
+
+.is-open .label--open {
+    display: none;
+}
+
+.is-open .label--close {
+    display: block;
+}
+
+.modal-content {
+    background: #f5f5f5;
+}
+
+.article-text h4 {
+    font-size: 17px;
+    font-weight: 600;
+}
+.article-text p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.article-text h6 {
+    font-size: 14px;
+    margin: 10px 0px 30px;
+}
+
+.ceo_sign h6 {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.ceo_sign small {
+    font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 70%;
+    }
+}
+/*=========STICKY SOCAILA ICON ===============*/
+.sticky-container {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    left: -128px;
+    top: 230px;
+    width: 170px;
+    z-index: 1100;
+}
+
+.sticky li {
+    list-style-type: none;
+    background-color: #fff;
+    color: #efefef;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.sticky li:hover {
+    margin-right: -115px;
+}
+
+.sticky li img {
+    float: right;
+    margin: 5px 4px;
+    margin-right: 5px;
+}
+
+.sticky li p {
+    float: right;
+    padding-top: 5px;
+    margin: 0px;
+    line-height: 16px;
+    font-size: 11px;
+}
+
+.sticky li p a {
+    text-decoration: none;
+    color: #2C3539;
+}
+
+.sticky li p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+#project {
+	@extend %clearfix;
+}
+
+.projects {
+	margin: 0;
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+}

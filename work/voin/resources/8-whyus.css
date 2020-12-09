@@ -1,0 +1,55 @@
+#whyus {
+    margin-top: 90px;
+}
+
+.icon {
+    font-size: 45px;
+    margin-right: 10px;
+    color: #eb2f06;
+}
+
+.images {
+    width: 10%;
+}
+
+.text-content {
+    width: 90%;
+}
+
+.images,
+.text-content {
+    float: left;
+    padding: 20px 10px 20px;
+}
+
+@media(min-width: 768px) {
+    .images {
+        width: 20%;
+    }
+    
+    .text-content {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

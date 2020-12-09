@@ -1,0 +1,136 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+    background: url('../img/hero.jpg') no-repeat center / cover;
+    padding: 120px 0;
+    background-attachment: fixed;
+    margin-top: 56px;
+}
+
+#speakers {
+    background-color: #01213d;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.speakers-name {
+    padding-left: 15px;
+}
+
+#register {
+    background: url('../img/reg-img-bg.jpg') no-repeat center / cover;
+    padding: 80px 0;
+    background-attachment: fixed;
+}
+
+.about-text {
+    font-size: 20px;
+}
+
+.icon {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #046cc9;
+}
+
+#footer {
+    background-color: #01213d;
+    padding: 20px 0;
+    color: #fff;
+}
+
+/*=============Loader-------------*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: 1;
+    animation: spin 2s linear infinite;
+}
+
+.animated-bottom {
+    position: relative;
+    animation-name: animatedbottom;
+    animation-duration: 1s;
+}
+
+@keyframes animatedbottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#myId {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

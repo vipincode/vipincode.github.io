@@ -1,0 +1,59 @@
+#about {
+    margin-top: 90px;
+    padding: 50px 0 100px;
+    background: linear-gradient(#333, #333),
+                url('../img/about-bg.jpg') no-repeat center / cover;
+    color: #fff;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#about::after,
+#about::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    transform: skewY(-2deg);
+}
+
+#about::after {
+    bottom: -25px;
+}
+#about::before {
+    top: -25px;
+}
+
+.about-text {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

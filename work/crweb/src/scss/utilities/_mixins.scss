@@ -1,0 +1,125 @@
+// ==================================
+// Mixins
+//===================================
+
+// BEM selector
+
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin m($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
+// Media Queries
+
+@mixin mq($break) {
+	@if $break == "small" {
+		@media(min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+			@content;
+		}
+	}
+	@else if $break == "medium" {
+		@media(min-width: $brkpoint-md + 1) {
+			@content;
+		}
+	}
+	@else if $break == "large" {
+		@media(min-width: $brkpoint-lg) {
+			@content;	
+		}
+	}
+	@else {
+		@error "Whoops, No value could be retrived for `#{$break}`";
+	}
+}
+
+// Generating Grid 
+
+@mixin grid-generator($size, $grid-columns) {
+	@for $i from 1 through $grid-columns {
+		.col-#{$size}-#{$i}-#{$grid-columns} {
+			width: percentage($i / $grid-columns);
+			float: left;
+			@content;
+		}
+	}
+}
+
+// Generate modifier color classes
+
+@mixin bg-colors($map) {
+	@each $theme, $color in $map {
+		&--#{$theme} {
+			background-color: $color;
+		}
+	}
+}
+
+// Flexbox mixins
+
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null) {
+	display: $disp;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	justify-content: $just;
+	align-items: $align;
+}
+
+// Creating pseudo element
+
+@mixin pseudo {
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '';
+		display: block;
+		@content;
+	}
+}
+
+@mixin pseudo-bf {
+	position: relative;
+	&::before {
+		position: absolute;
+		content: '';
+		display: block;
+		@content;
+	}
+}
+
+@mixin font-af {
+	position: relative;
+	&::after {
+		position: absolute;
+		display: block;
+		@content;
+	}
+}
+
+@mixin font-bf {
+	&::before {
+		@extend %fa-icon;
+		@extend .fas;
+		color: $color-primary;
+		margin-right: em(15px, $base__font-size);
+		@content;
+	}
+}
+
+// Crating margins & padding
+
+@mixin list-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} { 
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}

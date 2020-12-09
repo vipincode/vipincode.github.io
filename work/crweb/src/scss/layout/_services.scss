@@ -1,0 +1,68 @@
+.tabs {
+	@include e(sub) {
+		@extend %center-align;
+		h3 {
+			font-size: em(28px);
+			font-weight: $font-weight-x-large;
+		}
+		p {
+			font-size: em(19px);
+			font-weight: $font-weight-medium;
+		}
+		@include m(content) {
+			h4 {
+				font-size: em(21px);
+				font-weight: $font-weight-x-large;
+				margin-bottom: em(10px, 21px);
+				padding-left: em(30px, 21px);
+				@include pseudo-bf {
+					width: 20px;
+					height: 20px;
+					border-radius: $br-radius;
+					background-color: $color-primary;
+					left: 0;
+					top: em(5px);
+				}
+			}
+
+			h5 {
+				font-size: em(21px);
+				font-weight: $font-weight-x-large;
+				margin-bottom: em(10px, 21px);
+			}
+
+			h5.res {
+				@include font-bf {
+					content: fa-content($fa-var-desktop);
+				}
+			}
+
+			h5.ecom {
+				@include font-bf {
+					content: fa-content($fa-var-shopping-cart);
+				}
+			}
+
+			h5.inte {
+				@include font-bf {
+					content: fa-content($fa-var-cog);
+				}
+			}
+
+			h5.mob {
+				@include font-bf {
+					content: fa-content($fa-var-mobile);
+				}
+			}
+
+			img {
+				display: block;
+				width: em(500px);
+				height: em(300px);
+				@extend .centered;
+				object-fit: cover;
+			}
+		}
+	}
+}
+

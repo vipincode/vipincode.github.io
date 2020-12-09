@@ -1,0 +1,38 @@
+#hero-bg {
+	width: 100%; 
+	height: calc(100vh - 84px);
+	@include pseudo {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($color-primary, 0.4);
+	}
+}
+
+.hero {
+	position: relative;
+	@include e(item) {
+		position: absolute;
+		top: em(100px);
+		left: em(50px);
+		@include mq(medium) {
+			width: 70%;
+		}
+		h1 {
+			color: $white;
+			font-size: em(38px);
+			line-height: (46px/38px);
+			@include mq('medium') {
+				font-size: em(62px);
+				line-height: (72px/62px);	
+			}
+		}
+		p {
+			color: $white;
+			font-size: em(24px);
+			font-weight: $font-weight-xx-large;
+			letter-spacing: $letter-space;
+		}
+	}
+}

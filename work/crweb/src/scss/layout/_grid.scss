@@ -1,0 +1,18 @@
+// ===================================
+// Generating Grid for layout
+// ===================================
+
+.grid {
+	@extend %clearfix;
+	@include e(item) {
+		padding: em(10px);	
+	}
+}
+
+@include mq(medium) {
+	@include grid-generator('md', 12);
+}
+
+@include mq(large) {
+	@include grid-generator('lg', 12);
+}
